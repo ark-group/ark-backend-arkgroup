@@ -22,7 +22,13 @@ repositories {
 dependencies {
 
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	
+	// Database Drivers
 	compile('org.postgresql:postgresql')
+
+	// Rabbit MQ
+	compile("org.springframework.boot:spring-boot-starter-amqp")
+	
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'

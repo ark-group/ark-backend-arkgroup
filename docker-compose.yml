@@ -1,0 +1,25 @@
+version: "1.0"
+
+services:
+  sit-cache:
+    image: ark/ark-backend-employee
+    ports:
+      - "8080:8080"
+      - "6300:6300"
+    links:
+      - rabbit:rabbit
+      - redis:redis
+    environment:
+      - HTTPS_PROXY=http://localhost:80
+
+
+  redis:
+    image: ark/redis
+    ports:
+      - "6379:6379"
+
+  rabbit:
+    image: ark/rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"

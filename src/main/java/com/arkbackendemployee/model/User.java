@@ -10,38 +10,18 @@ import javax.persistence.*;
 @Setter
 @Table(name = "User")
 public class User {
+    private String status;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userId;
-
-    @Column
-    private String userName;
-
-    @Column
-    private String address;
-
-    public Long getUserId() {
-        return userId;
+    public User(String status) {
+        this.status = status;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public String getStatus() {
+        return status;
     }
 
-    public String getUserName() {
-        return userName;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
