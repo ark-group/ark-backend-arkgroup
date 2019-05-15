@@ -1,8 +1,8 @@
 version: "1.0"
 
 services:
-  sit-cache:
-    image: ark-group/ark-backend-employee
+  ark-cache:
+    image: ark-group/ark-backend-arkgroup
     ports:
       - "8080:8080"
       - "6300:6300"

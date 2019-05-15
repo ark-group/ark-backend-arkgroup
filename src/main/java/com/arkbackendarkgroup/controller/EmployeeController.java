@@ -1,12 +1,10 @@
-package com.arkbackendemployee.controller;
-import com.arkbackendemployee.model.Employee;
-import com.arkbackendemployee.service.EmployeeService;
+package com.arkbackendarkgroup.controller;
+import com.arkbackendarkgroup.model.Employee;
+import com.arkbackendarkgroup.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController

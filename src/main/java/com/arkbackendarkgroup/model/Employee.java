@@ -1,4 +1,4 @@
-package com.arkbackendemployee.model;
+package com.arkbackendarkgroup.model;
 
 import lombok.*;
 

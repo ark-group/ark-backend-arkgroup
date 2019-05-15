@@ -1,7 +1,7 @@
-package com.arkbackendemployee.controller;
+package com.arkbackendarkgroup.controller;
 
-import com.arkbackendemployee.model.Employee;
-import com.arkbackendemployee.repository.EmployeeDao;
+import com.arkbackendarkgroup.model.Employee;
+import com.arkbackendarkgroup.repository.EmployeeDao;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.After;

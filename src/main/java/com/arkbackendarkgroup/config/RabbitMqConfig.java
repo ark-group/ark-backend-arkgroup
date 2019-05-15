@@ -1,4 +1,4 @@
-package com.arkbackendemployee.config;
+package com.arkbackendarkgroup.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

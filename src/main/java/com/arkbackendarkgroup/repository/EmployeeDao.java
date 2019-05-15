@@ -1,6 +1,6 @@
-package com.arkbackendemployee.repository;
+package com.arkbackendarkgroup.repository;
 
-import com.arkbackendemployee.model.Employee;
+import com.arkbackendarkgroup.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

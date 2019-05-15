@@ -1,4 +1,4 @@
-package com.arkbackendemployee.config;
+package com.arkbackendarkgroup.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

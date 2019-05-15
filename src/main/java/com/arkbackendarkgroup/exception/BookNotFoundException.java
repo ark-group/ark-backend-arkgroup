@@ -1,4 +1,4 @@
-package com.arkbackendemployee.exception;
+package com.arkbackendarkgroup.exception;
 
 public class BookNotFoundException extends RuntimeException {
 
