@@ -1,9 +1,10 @@
 package com.arkbackendarkgroup.exception;
 
-public class BookNotFoundException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-    public BookNotFoundException(Long id) {
-        super("Book id not found : " + id);
-    }
+
+public class ProductNotFoundException extends RuntimeException {
+
 
 }

@@ -1,7 +1,7 @@
 package com.arkbackendarkgroup.controller;
 
 import com.arkbackendarkgroup.model.Employee;
-import com.arkbackendarkgroup.repository.EmployeeDao;
+import com.arkbackendarkgroup.repository.EmployeeRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.After;
@@ -30,7 +30,7 @@ public class EmployeeControllerTest {
 
 	//Directly invoke the APIs interacting with the DB
 	@Autowired
-	private EmployeeDao employeeDao;
+	private EmployeeRepository employeeRepository;
 
 
 	//Test RestTemplate to invoke the APIs.
@@ -78,7 +78,7 @@ public class EmployeeControllerTest {
 	   Assert.assertNotNull(empId);
 
 		//Fetching the Employee details directly from the DB to verify the API succeeded
-		Employee employeeFromdb = employeeDao.getOne(empId);
+		Employee employeeFromdb = employeeRepository.getOne(empId);
 		Assert.assertEquals("karan",employeeFromdb.getName());
 		Assert.assertEquals("engineer",employeeFromdb.getDesignation());
 		Assert.assertTrue(1000==employeeFromdb.getSalary());
@@ -86,7 +86,7 @@ public class EmployeeControllerTest {
 
 		//Delete the data added for testing
 
-	   employeeDao.deleteById(empId);
+	   employeeRepository.deleteById(empId);
 
 
 	}

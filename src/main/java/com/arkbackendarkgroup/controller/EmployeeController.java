@@ -3,6 +3,7 @@ import com.arkbackendarkgroup.model.Employee;
 import com.arkbackendarkgroup.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -12,6 +13,12 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
+
+	@Autowired
+	RestTemplate restTemplate;
+
+	//restTemplate.exchange(
+	//         "http://localhost:8080/products/"+id, HttpMethod.DELETE, entity, String.class).getBody();
 
 	@GetMapping("/employees")
 	List<Employee> getAllEmployees(){

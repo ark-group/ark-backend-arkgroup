@@ -1,7 +1,7 @@
 package com.arkbackendarkgroup.service;
 
 import com.arkbackendarkgroup.model.Employee;
-import com.arkbackendarkgroup.repository.EmployeeDao;
+import com.arkbackendarkgroup.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,26 +11,26 @@ import java.util.List;
 public class EmployeeService {
 
     @Autowired
-    EmployeeDao employeeDao;
+    EmployeeRepository employeeRepository;
 
     public List<Employee> getAllEmployees(){
 
-        return employeeDao.findAll();
+        return employeeRepository.findAll();
     }
 
     public Employee getEmployeeDetails(Long id){
-        return employeeDao.getOne(id);
+        return employeeRepository.getOne(id);
     }
 
     public void saveEmployee(Employee employee){
 
-        employeeDao.save(employee);
+        employeeRepository.save(employee);
 
     }
 
     public void deleteEmployeeDetails(Long id){
 
-        employeeDao.deleteById(id);
+        employeeRepository.deleteById(id);
 
     }
 }
