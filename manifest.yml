@@ -1,6 +1,0 @@
-name: ark-backend-employee
-path: ./build/libs/ark-backend-employee-0.0.1-SNAPSHOT.jar
-memory: 1G
-services:
-  -postgresdb
-
